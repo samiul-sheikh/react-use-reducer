@@ -21,7 +21,7 @@ const PatientManagement = () => {
         <div>
             <h2>Patient Management: {state.patients.length}</h2>
             <form onSubmit={handleSubmit}>
-                <input ref={nameRef} />
+                <input ref={nameRef} placeholder="enter a patient name" />
             </form>
             {
                 state.patients.map(pt => <li
